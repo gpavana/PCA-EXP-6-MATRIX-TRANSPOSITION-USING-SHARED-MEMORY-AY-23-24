@@ -62,9 +62,7 @@ Google Colab with NVCC Compiler
 16. End of Algorithm
 
 ## PROGRAM:
-
-!pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
-%load_ext nvcc4jupyter
+```python
 %%cuda
 #include <stdio.h>
 #include <cuda_runtime.h>
@@ -397,6 +395,7 @@ CHECK(cudaMemset(d_C, 0, nBytes));
     CHECK(cudaDeviceReset());
     return EXIT_SUCCESS;
 }
+```
 
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/28729ff8-215b-4b71-a80c-8f3cfe14d382)
